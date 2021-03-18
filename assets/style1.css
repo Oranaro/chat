@@ -1,0 +1,117 @@
+@font-face {
+    font-family: tommy;
+    src: url(tommy.otf);
+  } 
+@font-face {
+    font-family: baskerville;
+    src: url(baskerville.ttf);
+  } 
+body {
+    background-image: url("FOND_site.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:whitesmoke;
+    text-shadow: 0.5em 0.5em 0.7em black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body,html {
+    height: 90%;
+  }
+header {
+    background-color: antiquewhite;
+    opacity:90% ;
+    color: black;
+    height:80px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+header div {
+    font-size: 0.5rem;
+    margin: 2%;
+}
+
+.home {
+    flex-grow: 1;
+    width: 100px;
+}
+
+.icons {
+    flex-grow: 1;
+
+    width: 100px;
+}
+
+.menu {
+    margin-right: 20%;
+    text-align: justify;
+    font-size: 20px;
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+span {
+    display: inline-block;
+}
+
+.sec {
+    background-image: linear-gradient(to right, rgb(235, 67, 145),rgb(126, 32, 102)) ;
+    height: 100%;
+    width: 80%;
+    opacity: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-top: none;
+    overflow-y: scroll ;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(11, 11, 14);
+    transition: all .1s;
+}
+
+a:hover{
+    transform: scale(1.2);  
+    font-size: 120%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.sec .classement {
+    padding: 0.3em;
+    background-color: rgb(27, 26, 26);
+    width: 90%;
+    margin: auto;
+    font-size: 2em;
+    opacity: 60%;
+    transition: all .3s;
+}
+
+.sec .classement:hover {
+    opacity: 80%;
+}
+
+h1 {
+    margin-bottom: 2em;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.classement:nth-child(2n) {
+    background-color: rgb(83, 80, 80);
+}
