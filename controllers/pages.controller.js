@@ -1,10 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
+const { hello } = require('../libs/funcrecettes.js');
+
 router.get('/', (req, res) => {
 	res.render('pages/home', {
 		title: 'Chat Des Bois',
 		style: 'style.css',
+		data: hello()
 	});
 });
 
