@@ -143,6 +143,10 @@ h1 {
     background-color: whitesmoke;
     opacity: 90%;
     border: 1px solid black;
+    overflow-y: scroll ;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+
 }
 
 .cardtitle {
@@ -151,4 +155,24 @@ h1 {
     font-size: 2em;
     color: black;
     text-align: center;
+}
+
+
+p~img {
+    display: none;
+    position: absolute;
+    right: -10px;
+
+}
+
+p:hover ~ img {
+    display: block;
+}
+
+.recepe--container > div {
+    position: relative;
+}
+
+p {
+    color: black;
 }
