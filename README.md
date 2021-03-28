@@ -24,3 +24,8 @@ Pour un mode développement (hot reload), lancer la commande
 ```bash
 npm run dev
 ```
+### Pour avoir les ids de l'api google
+
+Aller sur le [dashboard](https://console.cloud.google.com/apis), puis 'identifiants.
+
+Appuyez sur 'Créer des identifiants' > 'Compte de service' > remplissez le formulaire
