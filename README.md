@@ -29,3 +29,5 @@ npm run dev
 Aller sur le [dashboard](https://console.cloud.google.com/apis), puis 'identifiants.
 
 Appuyez sur 'Créer des identifiants' > 'Compte de service' > remplissez le formulaire
+
+Lien de la [doc](https://theoephraim.github.io/node-google-spreadsheet/#/) de la librairie.
