@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const { getDoc, buildRecipesArray } = require('../libs/sheets.js');
 
 router.get('/', (req, res) => {
 	res.render('pages/home', {
@@ -15,10 +16,15 @@ router.get('/classement', (req, res) => {
 	});
 });
 
-router.get('/cuisine', (req, res) => {
+router.get('/cuisine', async (req, res) => {
+	const document = await getDoc();
+
+	const recipes = buildRecipesArray(document);
+
 	res.render('pages/cuisine', {
 		title: 'Recettes',
 		style: 'style1.css',
+		recipes: recipes,
 	});
 });
 router.get('/commande', (req, res) => {

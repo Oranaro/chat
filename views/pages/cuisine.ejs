@@ -13,7 +13,8 @@
 					<div class="cards">
 						<div class="cards__title">Entrées</div>
 						<div class="cards__recipe--container">
-							<div>
+							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipe', {recipe}) %> <% }) %>
+					<!-- 		<div>
 								<p>Salade niçoise</p>
 								<img src="https://placekitten.com/200/300" alt="" />
 							</div>
@@ -56,7 +57,7 @@
 							<div>
 								<p>Soupe Miso</p>
 								<img src="https://placekitten.com/400/300" alt="" />
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<div class="cards">
