@@ -1,0 +1,155 @@
+header {
+	background-color: var(--white);
+	opacity: 90%;
+	color: black;
+	height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	overflow: hidden;
+}
+
+header div {
+	font-size: 0.5rem;
+	margin: 2%;
+}
+
+span {
+	display: inline-block;
+}
+
+section {
+	height: 85vh;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(11, 11, 14);
+	transition: all 0.1s;
+}
+
+a:hover {
+	transform: scale(1.2);
+	font-size: 120%;
+}
+
+footer {
+	text-align: center;
+	padding-top: 1em;
+}
+
+p {
+	color: black;
+}
+/** Misc **/
+.sec::-webkit-scrollbar,
+.cards::-webkit-scrollbar {
+	width: 0px;
+}
+
+/** Header **/
+.header__home {
+	margin-left: 12%;
+	flex-grow: 1;
+	width: 100px;
+}
+
+.header__icons {
+	flex-grow: 2;
+	margin-right: 5%;
+	width: 100px;
+}
+
+.header__menu {
+	text-align: justify;
+	font-size: 20px;
+	flex-grow: 3;
+	display: flex;
+	justify-content: space-around;
+	width: 300px;
+}
+
+/** Section Layout **/
+.sec {
+	background-image: linear-gradient(to right, rgb(235, 67, 145), rgb(126, 32, 102));
+	height: 100%;
+	width: 80%;
+	opacity: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	border: 3px solid black;
+	border-top: none;
+	overflow-y: scroll;
+	scrollbar-color: transparent transparent;
+	scrollbar-width: 0px;
+}
+
+.sec__title {
+	margin-bottom: 2em;
+	color: var(--white);
+	text-align: center;
+	font-size: 2.5em;
+}
+.sec__list--item {
+	padding: 0.3em;
+	background-color: rgb(27, 26, 26);
+	width: 90%;
+	margin: auto;
+	font-size: 2em;
+	opacity: 60%;
+	transition: all 0.3s;
+}
+
+.sec__list--item:hover {
+	opacity: 80%;
+}
+
+.sec__list--item:nth-child(2n) {
+	background-color: rgb(83, 80, 80);
+}
+
+.flexer {
+	display: flex;
+	height: 70%;
+	justify-content: space-around;
+}
+
+/** Recipes Cards **/
+.cards {
+	width: 30%;
+	background-color: var(--white);
+	opacity: 90%;
+	border: 1px solid black;
+	overflow-y: scroll;
+	scrollbar-color: transparent transparent;
+	scrollbar-width: 0px;
+	color: black;
+	font-style: italic;
+}
+
+.cards__title {
+	font-family: cursive;
+	font-style: italic;
+	font-size: 2em;
+	color: black;
+	text-align: center;
+}
+
+.cards__recipe--container > div {
+	position: relative;
+}
+
+.cards__recipe--container > div > p ~ img {
+	display: none;
+	position: absolute;
+	right: -10px;
+}
+
+.cards__recipe--container > div > p:hover ~ img {
+	display: block;
+}
+
+
