@@ -1,9 +1,0 @@
-<div class="cards__item">
-	<li>Nom recette: <span><%= recipe.name %></span></li>
-	<p>Ingrédients:</p>
-	<ul>
-		<% if(recipe.list) {%> <% recipe.list.forEach((ingredient) => { %>
-		<li><%= ingredient%></li>
-		<%}) %> <% } %>
-	</ul>
-</div>

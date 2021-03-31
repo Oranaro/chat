@@ -2,7 +2,7 @@ header {
 	background-color: var(--white);
 	opacity: 90%;
 	color: black;
-	min-height: 5vh;
+	height: 10vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -126,6 +126,8 @@ p {
 	overflow-y: scroll;
 	scrollbar-color: transparent transparent;
 	scrollbar-width: 0px;
+	color: black;
+	font-style: italic;
 }
 
 .cards__title {
@@ -149,3 +151,5 @@ p {
 .cards__recipe--container > div > p:hover ~ img {
 	display: block;
 }
+
+

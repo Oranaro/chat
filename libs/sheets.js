@@ -33,17 +33,27 @@ exports.getDoc = async () => {
  */
 exports.buildRecipesArray = (document) => {
 	let recipes = [];
-
+	let i = 0;
+	
 	document.forEach((rows) => {
+		let y =0;
+
 		rows.forEach((row) => {
+			
 			const recipe = {
 				name: row._rawData[0] !== undefined ? row._rawData[0] : null,
 				list: row._rawData[1] !== undefined ? row._rawData[1].split(',') : null,
 				prep: row._rawData[2] !== undefined ? row._rawData[2] : null,
+				paper: i,
 			};
 			recipes.push(recipe);
+			y++;
+
 		});
+		i++;
+
 	});
 
+	
 	return recipes;
 };

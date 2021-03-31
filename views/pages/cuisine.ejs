@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<%- include('../partials/_head') %>
-		<script src="scripts/funcrecettes.js" defer></script>
 	</head>
 	<body>
 		<%- include('../partials/_header') %>
@@ -13,16 +12,20 @@
 					<div class="cards">
 						<div class="cards__title">Entrées</div>
 						<div class="cards__recipe--container">
-							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipe', {recipe}) %> <% }) %>
+							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipeEntree', {recipe}) %> <% }) %>
 						</div>
 					</div>
 					<div class="cards">
 						<div class="cards__title">Plats</div>
-						<div class="cards__recipe--container"></div>
+						<div class="cards__recipe--container">
+							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipePlat', {recipe}) %> <% }) %>
+						</div>
 					</div>
 					<div class="cards">
 						<div class="cards__title">Desserts</div>
-						<div class="cards__recipe--container"></div>
+						<div class="cards__recipe--container">
+							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipeDessert', {recipe}) %> <% }) %>
+						</div>
 					</div>
 				</div>
 			</div>
