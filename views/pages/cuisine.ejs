@@ -12,19 +12,22 @@
 					<div class="cards">
 						<div class="cards__title">Entrées</div>
 						<div class="cards__recipe--container">
-							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipeEntree', {recipe}) %> <% }) %>
+							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipeItem', {recipe,paper:0})
+							%> <% }) %>
 						</div>
 					</div>
 					<div class="cards">
 						<div class="cards__title">Plats</div>
 						<div class="cards__recipe--container">
-							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipePlat', {recipe}) %> <% }) %>
+							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipeItem', {recipe,paper:1})
+							%> <% }) %>
 						</div>
 					</div>
 					<div class="cards">
 						<div class="cards__title">Desserts</div>
 						<div class="cards__recipe--container">
-							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipeDessert', {recipe}) %> <% }) %>
+							<% recipes.forEach((recipe) => { %> <%- include('../partials/_recipeItem', {recipe,paper:2})
+							%> <% }) %>
 						</div>
 					</div>
 				</div>
