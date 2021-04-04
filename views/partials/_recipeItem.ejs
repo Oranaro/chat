@@ -1,3 +1,15 @@
 <ul>
-	<%if(recipe.paper==paper) {%> <li><span class="cards__item"></span> <%=recipe.name %> </span></li> <%} %>
+	<%if(recipe.paper==paper) {%> 
+
+		<li><span class="cards__item"> <%=recipe.name %> </span></li>
+
+		<div class="modal">
+
+ 			 <div class="modal-content">
+   				 <span class="close">&times;</span>
+   				 <p> <%=recipe.list %> </p>
+ 			 </div>
+
+		</div>
+	 <%} %>
 </ul>
