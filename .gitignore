@@ -4,3 +4,5 @@ node_modules/
 ./node_modules
 credentials.json
 google-api-credentials.json
+START DEV.bat
+START.bat
