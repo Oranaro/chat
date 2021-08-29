@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('../partials/_head') %>
+	</head>
+	<body>
+		<%- include('../partials/_header') %>
+		<section>
+			<div class="sec">
+				<div class="sec__title"><h1>Commandes</h1></div>
+				<div class="sec__list--container">
+					<% context.descriptedCommands.forEach((command) => { %> 
+						<%- include('../partials/_command', { command }) %> 
+					<% }) %>
+					<% context.commands.forEach((command) => { %> 
+						<%- include('../partials/_command', { command }) %> 
+					<% }) %>
+				</div>
+			</div>
+		</section>
+		<%- include('../partials/_footer') %>
+	</body>
+</html>
